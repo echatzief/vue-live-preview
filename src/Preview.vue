@@ -88,6 +88,9 @@
       },
       change (code) {
 
+        // Update the parent data with the new code
+        this.$parent._data.code = code 
+        
         const html = document.createElement('div')
         html.innerHTML = code
 
